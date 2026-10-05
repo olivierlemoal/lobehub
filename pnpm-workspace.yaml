@@ -54,7 +54,16 @@ allowBuilds:
 overrides:
   '@ant-design/icons': 6.3.2
   '@react-pdf/image': 3.0.4
+  # @lobehub/* floats: newer releases dropped/added exports this tree does not
+  # match (ui >=5.50 drops NeuralNetworkLoading, editor >=4.29 needs base-ui
+  # Divider). Pinned to the versions current at v2.2.18.
+  '@lobehub/charts': 5.5.1
+  '@lobehub/editor': 4.27.3
+  '@lobehub/icons': 5.18.0
+  '@lobehub/ui': 5.48.0
   '@types/react': 19.2.13
+  # 2.12.0 renamed internal chunks, breaking patches/@upstash__qstash.patch
+  '@upstash/qstash': 2.11.3
   '@vitest/coverage-v8': 5.0.0
   antd: 6.3.5
   baseline-browser-mapping: 2.10.31
